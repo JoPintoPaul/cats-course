@@ -25,7 +25,7 @@ object CatsIntro {
 
   // part 5: extending type class operations to composite types, e.g. lists
   import cats.instances.list._ // to bring Eq[List[Int]] into scope
-  val aListComparison = List(2) === List(3) // retruns false
+  val aListComparison = List(2) === List(3) // returns false
 
   // part 6 - create a type class instance for custom type
   case class ToyCar(model: String, price: Double)
