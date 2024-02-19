@@ -11,7 +11,7 @@ object Semigroups {
   val intCombination = naturalIntSemigroup.combine(2, 46) // addition
 
   val naturalStringCombination = Semigroup[String]
-  val stringCombination = naturalStringCombination.combine("I love ", "Cats") // concatiation
+  val stringCombination = naturalStringCombination.combine("I love ", "Cats") // concatenation
 
   // specific API
   def reduceInts(list: List[Int]): Int = list.reduce(naturalIntSemigroup.combine)
