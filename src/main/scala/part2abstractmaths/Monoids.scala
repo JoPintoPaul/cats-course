@@ -4,7 +4,6 @@ object Monoids {
 
   // Monoids are a natual extension of semigroups that can offer a "zero" value
   // They inherit the same combine method |+| from semigroups
-  // 
 
   import cats.Semigroup
   import cats.instances.int._
