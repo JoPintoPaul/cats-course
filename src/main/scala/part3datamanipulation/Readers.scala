@@ -40,5 +40,4 @@ object Readers {
 
   def main(args: Array[String]): Unit = {
   }
-
 }
