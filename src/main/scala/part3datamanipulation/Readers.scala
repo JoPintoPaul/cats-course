@@ -30,7 +30,6 @@ object Readers {
   val joannasOrderStatusReader = dbReader.map(conn => conn.getOrderStatus(123))
   val joannasOrderStatus: Id[String] = joannasOrderStatusReader.run(myConfig)
 
-
   /*
   Pattern
   1. you create the initial data structure
@@ -38,7 +37,7 @@ object Readers {
   3. you can then map & flatMap the reader to produce derived information
   4. when you need the final piece of information, you call run on the reader with the initial data structure
  */
-  
+
   def main(args: Array[String]): Unit = {
   }
 
