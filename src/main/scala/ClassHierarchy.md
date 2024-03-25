@@ -2,7 +2,12 @@
     classDiagram
         Semigroup <|-- Monoid
         
-        Semigroupal <|-- Applicative
-        Functor <|-- Applicative
+        Semigroupal <|-- Apply
+        Functor <|-- Apply 
+        
+        Apply <|--Applicative
+        Apply <|--FlatMap
+        
         Applicative <|-- Monad
+        FlatMap <|-- Monad
 ```
