@@ -2,6 +2,8 @@
     classDiagram
         Semigroup <|-- Monoid
         
+        Foldable
+        
         Semigroupal <|-- Apply
         Functor <|-- Apply 
         
